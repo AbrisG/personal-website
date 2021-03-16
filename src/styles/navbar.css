@@ -1,0 +1,106 @@
+@font-face {
+  font-family: jetBrainsMonoLight;
+  src: url(../fonts/ttf/JetBrainsMono-Light.ttf);
+  font-weight: bold;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--navbar-static-height);
+  transition: var(--standard-animation);
+  background-color: var(--page-background-color);
+  position: fixed;
+  align-self: center;
+  border-bottom: 1px solid var(--page-line-color);
+}
+
+.navbar {
+  padding-left: 100px;
+  padding-right: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--page-background-color);
+  z-index: 2;
+}
+
+.navbar-logo {
+  flex-basis: 20%;
+  padding: 0px 14px;
+  margin: 0;
+}
+
+.navbar-logo a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+  color: var(--page-text-color);
+}
+
+.navbar-text {
+  flex-basis: 80%;
+  display: flex;
+  justify-content: right;
+  margin: 0;
+}
+
+.navbar-text a {
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  padding: 0px 14px;
+  /*text-transform: uppercase;*/
+  font-family: jetBrainsMonoLight;
+  transition: var(--standard-animation);
+}
+
+.navbar-text a:hover {
+  color: var(--hover-colour);
+}
+
+.navbar-text a:before {
+  position: absolute;
+  content: ".";
+  opacity: 0;
+  transition: var(--standard-animation);
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  transform: translateX(0px);
+}
+
+.navbar-text a:hover:before {
+  opacity: 1;
+  transform: translateX(-8px);
+}
+
+.navbar-text a:hover .slash {
+  opacity: 1;
+  animation: slashAnimation 0.5s linear 0s 1 alternate forwards;
+}
+
+.slash {
+  overflow: hidden;
+  display: inline-block;
+  transition: var(--standard-animation);
+  opacity: 0;
+}
+
+.navbar-text ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-text li {
+  float: right;
+}
