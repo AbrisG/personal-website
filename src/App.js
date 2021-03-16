@@ -1,4 +1,5 @@
 import { Navbar } from "./components/navbar";
+import { Landing } from "./components/landing";
 import "./App.css";
 
 function App() {
@@ -6,7 +7,11 @@ function App() {
     <div>
       <script src="https://unpkg.com/feather-icons"></script>
       <Navbar />
-      <div className="filler"></div>
+      <div className="site-layout">
+        <div className="center">
+          <Landing />
+        </div>
+      </div>
       <script>feather.replace()</script>
     </div>
   );

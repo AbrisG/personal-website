@@ -40,3 +40,15 @@
 .filler {
   height: 3000px;
 }
+
+.site-layout {
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1050px;
+}

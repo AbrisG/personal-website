@@ -13,9 +13,7 @@ export class EmailBanner extends Component {
         }}
       >
         <div className="sidebar-email">
-          <a href="mailto:abris.gilvesy@gmail.com">
-            abris.gilvesy@gmail.com {this.props.slide}
-          </a>
+          <a href="mailto:abris.gilvesy@gmail.com">abris.gilvesy@gmail.com</a>
         </div>
       </div>
     );
