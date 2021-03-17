@@ -1,0 +1,15 @@
+.bullet {
+  font-family: var(--font-paragraph);
+  font-size: var(--font-size-paragraph);
+  padding: 2px 0px 2px 15px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bullet svg {
+  margin-right: 4px;
+  width: 18px;
+  height: 18px;
+}

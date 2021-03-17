@@ -1,0 +1,62 @@
+.education {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 100px 0;
+}
+
+.experience-header,
+.education-header {
+  font-size: var(--font-size-big);
+  font-family: var(--font-big);
+  padding-bottom: 0px 0px 15px 0px;
+  transition: var(--standard-animation);
+}
+
+.experience ul,
+.education ul {
+  list-style-type: none;
+  padding: 0 0 0 10px;
+  margin: 0;
+}
+
+.experience li,
+.education li {
+  padding: 15px;
+}
+
+.experience-li-header,
+.education-li-header {
+  font-family: var(--font-subheading);
+  font-size: var(--font-size-subheading);
+}
+
+.experience-li-subheader,
+.education-li-subheader {
+  padding: 5px 5px 5px 10px;
+  font-family: jetBrainsMonoLight;
+  color: var(--page-alt-color);
+}
+
+.experience-li-description,
+.education-li-description {
+  font-family: var(--font-paragraph);
+  font-size: var(--font-size-paragraph);
+  padding: 2px 0px 2px 15px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.experience-li-description svg,
+.education-li-description svg {
+  margin-right: 4px;
+  width: 18px;
+  height: 18px;
+}
+
+.experience-li-header a,
+.education-li-header a {
+  text-decoration: none;
+  color: var(--hover-colour);
+}

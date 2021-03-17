@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { GitHub, Gitlab, Layout, Linkedin, Instagram } from "react-feather";
 import style from "../styles/socialsbanner.css";
 
 export class SocialsBanner extends Component {
@@ -8,16 +9,16 @@ export class SocialsBanner extends Component {
         <ul>
           <li>
             <a href="https://github.com/AbrisG/" label="github">
-              <i data-feather="github"></i>
+              <GitHub />
             </a>
           </li>
           <li>
             <a href="https://gitlab.cs.mcgill.ca/agilve1" label="gitlab" />
-            <i data-feather="gitlab"></i>
+            <Gitlab />
           </li>
           <li>
             <a href="/" label="reload">
-              <i data-feather="layout"></i>
+              <Layout />
             </a>
           </li>
           <li>
@@ -25,12 +26,12 @@ export class SocialsBanner extends Component {
               href="https://www.linkedin.com/in/abris-gilvesy/"
               label="linkedin"
             >
-              <i data-feather="linkedin"></i>
+              <Linkedin />
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/notabris/">
-              <i data-feather="instagram"></i>
+            <a href="https://www.instagram.com/notabris/" label="instagram">
+              <Instagram />
             </a>
           </li>
         </ul>

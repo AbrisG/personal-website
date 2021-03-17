@@ -1,5 +1,7 @@
 import { Navbar } from "./components/navbar";
 import { Landing } from "./components/landing";
+import { Education } from "./components/education";
+
 import "./App.css";
 
 function App() {
@@ -10,6 +12,7 @@ function App() {
       <div className="site-layout">
         <div className="center">
           <Landing />
+          <Education />
         </div>
       </div>
       <script>feather.replace()</script>
