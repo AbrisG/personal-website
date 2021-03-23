@@ -29,6 +29,7 @@
   justify-content: center;
   background-color: var(--page-background-color);
   z-index: 2;
+  transition: var(--standard-animation);
 }
 
 .navbar-logo {

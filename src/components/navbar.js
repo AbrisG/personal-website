@@ -2,6 +2,7 @@ import styles from "../styles/navbar.css";
 import { Component } from "react";
 import { EmailBanner } from "./emailbanner";
 import { SocialsBanner } from "./socialsbanner";
+import { LightMode } from "./lightmode";
 
 const C = {
   staticHeight: 80,
@@ -69,6 +70,9 @@ export class Navbar extends Component {
             </div>
             <div className="navbar-text">
               <ul>
+                <li>
+                  <LightMode />
+                </li>
                 <li>
                   <div className="navbar-hover">
                     <a href="#contact">
