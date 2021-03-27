@@ -1,6 +1,7 @@
 .tooltip {
   text-decoration: none;
   position: relative;
+  transition: var(--standard-animation);
 }
 
 .tooltip span {

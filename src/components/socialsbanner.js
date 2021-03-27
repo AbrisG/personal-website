@@ -13,8 +13,9 @@ export class SocialsBanner extends Component {
             </a>
           </li>
           <li>
-            <a href="https://gitlab.cs.mcgill.ca/agilve1" label="gitlab" />
-            <Gitlab />
+            <a href="https://gitlab.cs.mcgill.ca/agilve1" label="gitlab">
+              <Gitlab />
+            </a>
           </li>
           <li>
             <a href="/" label="reload">

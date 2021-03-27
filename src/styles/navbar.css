@@ -11,7 +11,10 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 10;
   height: var(--navbar-static-height);
+  /* transition: height var(--standard-animation),
+    transform var(--standard-animation); */
   transition: var(--standard-animation);
   background-color: var(--page-background-color);
   position: fixed;
@@ -28,7 +31,8 @@
   align-items: center;
   justify-content: center;
   background-color: var(--page-background-color);
-  z-index: 2;
+  z-index: 10;
+  /* transition: height var(--standard-animation); */
   transition: var(--standard-animation);
 }
 
@@ -61,7 +65,6 @@
   padding: 0px 14px;
   /*text-transform: uppercase;*/
   font-family: jetBrainsMonoLight;
-  transition: var(--standard-animation);
 }
 
 .navbar-text a:hover {
@@ -72,7 +75,8 @@
   position: absolute;
   content: ".";
   opacity: 0;
-  transition: var(--standard-animation);
+  transition: transform var(--standard-animation),
+    opacity var(--standard-animation);
   padding: 0;
   margin: 0;
   display: inline-block;
@@ -92,7 +96,7 @@
 .slash {
   overflow: hidden;
   display: inline-block;
-  transition: var(--standard-animation);
+  transition: opacity var(--standard-animation);
   opacity: 0;
 }
 

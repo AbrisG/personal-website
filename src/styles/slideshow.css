@@ -1,0 +1,37 @@
+.slideshow-center {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border: 1px solid white;
+  padding: 100px 0px;
+}
+
+.slideshow-container {
+  display: flex;
+  position: relative;
+  display: flex;
+  width: 60%;
+  height: 350px;
+  border: 1px solid white;
+  z-index: -2;
+}
+
+.sidebar {
+  height: 100%;
+  flex-basis: 25%;
+  border: 1px solid white;
+}
+
+.sidebar ol {
+  list-style-type: decimal-leading-zero;
+  list-style-position: 0px;
+  padding-left: 50px;
+  margin: 0;
+}
+
+.sidebar ol li {
+  padding: 15px 10px 15px 0px;
+}
+
+.sidebar a {
+}

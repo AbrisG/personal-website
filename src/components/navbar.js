@@ -71,9 +71,6 @@ export class Navbar extends Component {
             <div className="navbar-text">
               <ul>
                 <li>
-                  <LightMode />
-                </li>
-                <li>
                   <div className="navbar-hover">
                     <a href="#contact">
                       <span class="slash">/</span>contact
@@ -87,6 +84,7 @@ export class Navbar extends Component {
                   <a href="#experience">/experience</a>
                 </li>
               </ul>
+              <LightMode />
             </div>
           </div>
         </div>

@@ -26,7 +26,7 @@
 }
 
 :root {
-  /*theme*/
+  /*dark theme*/
   --page-background-color: #0e141b;
   --page-text-color: #ccd8e5;
   --page-line-color: #d9e2ec;
@@ -48,7 +48,7 @@
   --hover-colour: #6ccff6;
 
   /*animation*/
-  --standard-animation: all 0.3s ease-in-out;
+  --standard-animation: 0.3s ease-in-out;
 }
 
 a {
@@ -60,6 +60,16 @@ a:link,
 a:visited {
   text-decoration: none;
   color: var(--page-text-color);
+}
+
+* {
+  transition: color var(--standard-animation),
+    background-color var(--standard-animation);
+}
+
+.light-mode {
+  background-color: var(--page-text-color);
+  color: var(--page-background-color);
 }
 
 body {
@@ -77,4 +87,7 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+html {
+  scroll-behavior: smooth;
 }

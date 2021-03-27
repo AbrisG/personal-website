@@ -1,4 +1,5 @@
 .banner {
+  color: var(--page-line-color);
   top: var(--navbar-static-height);
   position: fixed;
   right: 40px;
@@ -31,4 +32,5 @@
   width: 1px;
   display: block;
   background-color: var(--page-line-color);
+  transition: var(--standard-animation);
 }

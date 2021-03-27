@@ -2,6 +2,7 @@ import { Navbar } from "./components/navbar";
 import { Landing } from "./components/landing";
 import { Education } from "./components/education";
 import { TypingEffect } from "./components/typingeffect";
+import { Slideshow } from "./components/slideshow";
 
 import "./App.css";
 
@@ -14,10 +15,9 @@ function App() {
         <div className="center">
           <Landing />
           <Education />
-          <TypingEffect text="Hello" />
+          <Slideshow />
         </div>
       </div>
-      <script>feather.replace()</script>
     </div>
   );
 }
